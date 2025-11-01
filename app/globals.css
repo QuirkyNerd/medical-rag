@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    /* ... keep all your CSS variables ... */
+  }
+
+  .dark {
+    /* ... keep all your dark mode variables ... */
+  }
+}
+
+@layer base {
+  * {
+    /* @apply border-border; */ /* Temporarily comment this out */
+    border-color: hsl(var(--border)); /* Alternative approach */
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

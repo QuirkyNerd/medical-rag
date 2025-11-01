@@ -1,0 +1,4 @@
+{
+  "/api/medichatgemini/route": "app/api/medichatgemini/route.js",
+  "/page": "app/page.js"
+}
